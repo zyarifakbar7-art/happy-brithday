@@ -351,7 +351,7 @@ const TypewriterStep = ({ onComplete }: { onComplete: () => void }) => {
                 setDisplayedText(text.slice(0, displayedText.length + 1));
             }, 150);
         } else if (!isDeleting && displayedText === text) {
-            timer = setTimeout(() => setIsDeleting(true), 7000);
+            timer = setTimeout(() => setIsDeleting(true), 15000);
         } else if (isDeleting && displayedText !== "") {
             timer = setTimeout(() => {
                 setDisplayedText(text.slice(0, displayedText.length - 1));
