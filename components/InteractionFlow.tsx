@@ -261,7 +261,7 @@ const LoveMeterStep = ({ onComplete }: { onComplete: () => void }) => {
             setProgress(prev => {
                 if (prev >= 100) {
                     clearInterval(interval);
-                    setTimeout(() => onComplete(), 1500);
+                    setTimeout(() => onComplete(), 12000);
                     return 100;
                 }
                 return prev + 1;
@@ -351,7 +351,7 @@ const TypewriterStep = ({ onComplete }: { onComplete: () => void }) => {
                 setDisplayedText(text.slice(0, displayedText.length + 1));
             }, 150);
         } else if (!isDeleting && displayedText === text) {
-            timer = setTimeout(() => setIsDeleting(true), 15000);
+            timer = setTimeout(() => setIsDeleting(true), 5000);
         } else if (isDeleting && displayedText !== "") {
             timer = setTimeout(() => {
                 setDisplayedText(text.slice(0, displayedText.length - 1));
