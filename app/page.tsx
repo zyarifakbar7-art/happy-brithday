@@ -42,8 +42,8 @@ export default function Home() {
 
         <DomeGallery
           images={userImages}
-          fit={0.8}
-          minRadius={600}
+          fit={1.1}
+          minRadius={500}
           maxVerticalRotationDeg={0}
           segments={34}
           dragDampening={2}
