@@ -128,5 +128,7 @@ url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
   body {
     @apply bg-background text-foreground;
     @apply bg-background text-foreground;
+    font-family: "Cherry Bomb One",
+cursive !important;
   }
 }
