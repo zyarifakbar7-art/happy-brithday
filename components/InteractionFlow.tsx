@@ -129,7 +129,7 @@ const TicTacToeStep = ({ onComplete }: { onComplete: () => void }) => {
     const [board, setBoard] = useState(Array(9).fill(null));
     const [isUserTurn, setIsUserTurn] = useState(true);
     const [winner, setWinner] = useState<string | null>(null);
-    const [message, setMessage] = useState("Let's play a little game...");
+    const [message, setMessage] = useState("Main game bentar saa ez ini mah");
 
     const checkWinner = useCallback((squares: (string | null)[]) => {
         const lines = [
